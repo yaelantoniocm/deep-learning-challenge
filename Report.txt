@@ -1,0 +1,32 @@
+- Overview of the Analysis:
+The primary objective of this analysis is to design and train a deep neural network model to categorize charity organizations based on various criteria. The end goal is to predict the success of these organizations in their donation requests.
+
+- Results:
+Data Preprocessing:
+
+- Which variables serve as your model's target?
+    The target variable is IS_SUCCESSFUL, indicating the success status of a charity organization's request.
+
+- Which variables serve as features for your model?
+    The model's features include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, and SPECIAL_CONSIDERATIONS.
+    
+- Which variables were removed from the input data as they neither served as target nor features?
+    The variables EIN and NAME were removed as they are identifiers and do not provide predictive value to the model.
+
+*Model Compilation, Training, and Evaluation:
+
+- How many neurons, layers, and activation functions did you choose for your neural network model, and why?
+    + Three hidden layers were chosen with 7, 14, and 21 neurons respectively.
+    + The ReLU activation function was used for the hidden layers, and the sigmoid activation function was used for the output layer. The ReLU function is popularly used in hidden layers due to its beneficial properties during training, while the sigmoid is apt for binary classification tasks in the output layer.
+
+- Were you able to achieve the target model performance?
+ + Based on the provided skeleton, the target performance varied; it wasn't consistent.
+
+- What steps did you take in attempts to increase your model's performance?
+    + Data preprocessing was conducted, including encoding of categorical variables and feature scaling.
+    + Model architecture was fine-tuned, selecting a specific number of layers and neurons.
+
+Summary:
+A deep neural network model was developed to predict the success of charity organizations in their donation endeavors. 
+Through careful data preprocessing and specific neural network architecture selection, an optimized model performance was sought. For future analyses, it might be beneficial to experiment with different neural architectures, 
+implement regularization techniques, or even explore alternative machine learning models to tackle this classification challenge.
